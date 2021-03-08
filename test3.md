@@ -1,5 +1,4 @@
 # test3 
-![license](https://img.shields.io/badge/license-GNU-General-Public-License-v3-blue.svg)
 ## Table of Contents 
     *  [Description](#description)
     *  [Installation Instructions](#installation-instructions)
