@@ -1,5 +1,5 @@
 # 09_ReadMe Generator 
-    ![license](https://img.shields.io/badge/license-Mozilla Public License 2.0-blue.svg)
+    ![license](https://img.shields.io/badge/license-Mozilla-Public-License-2.0-blue.svg)
     ## Table of Contents 
     *  [Description](#description)
     *  [Installation Instructions](#installation-instructions)
