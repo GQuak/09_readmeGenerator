@@ -699,37 +699,37 @@ function generateMarkdown(data) {
 // TODO: Create a function to write README file
 function createReadMe(input) {
     return `# ${input.title} 
-    ${renderLicenseBadge(input.license)}
-    ## Table of Contents 
-        *  [Description](#description)
-        *  [Installation Instructions](#installation-instructions)
-        *  [Usage Instructions](#usage-instructions)
-        *  [Contributing](#contributing)
-        *  [Test Instructions](#test-instructions) 
-        *  [License](#license)
-        *  [Have Questions?](#have-questions)
+${renderLicenseBadge(input.license)}
+## Table of Contents 
+    *  [Description](#description)
+    *  [Installation Instructions](#installation-instructions)
+    *  [Usage Instructions](#usage-instructions)
+    *  [Contributing](#contributing)
+    *  [Test Instructions](#test-instructions) 
+    *  [License](#license)
+    *  [Have Questions?](#have-questions)
     
-    ## Description
+## Description
         ${input.description}
     
-    ## Installation Instructions
+## Installation Instructions
         ${input.installation}
         
-    ## Usage Instructions
+## Usage Instructions
         ${input.usage}
         
-    ## Contributing
+## Contributing
         ${input.contribution}
         
-    ## Test Instructions
+## Test Instructions
         ${input.tests}
         
-    ## License
+## License
         ${input.license}
         ${renderLicenseLink(input.license)}
         ${renderLicenseSection(input)}
 
-    ## Have Questions? 
+## Have Questions? 
         Contact me!
         GitHub: http://www.github.com/${input.github}
         Email: ${input.email}
