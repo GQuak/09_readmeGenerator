@@ -20,6 +20,8 @@
             
 ## Usage Instructions
     Be prepared with any relevant information that needs to be included in your readme file.
+    
+    Example: [video](https://user-images.githubusercontent.com/75180482/110420745-2e2bd000-8059-11eb-9cc4-d5264caadf03.mp4)
             
 ## Contributing
     This application was built as part of the Coding Bootcamp program at the University of Denver. I do not plan to update or improve this application through contribution or future development.
