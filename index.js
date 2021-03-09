@@ -61,13 +61,6 @@ const questions = [{
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-    // if (license) {
-    //     let splitLicense = license.split(' ');
-    //     let joinLicense = splitLicense.join('-');
-    //     return `![license](https://img.shields.io/badge/license-${joinLicense}-blue.svg)`
-    // }
-    // else { return "" }
-
     switch (license) {
         case 'Apache License 2.0':
             return '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
@@ -730,8 +723,8 @@ function generateMarkdown(data) {
 
 // TODO: Create a function to write README file - ${renderLicenseBadge(input.license)}
 function createReadMe(input) {
-    return
-    `# ${input.title} 
+    return `
+# ${input.title} 
 
 ${renderLicenseBadge(input.license)}
     
