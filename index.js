@@ -33,7 +33,7 @@ const questions = [{
     type: "list",
     name: "license",
     message: "Choose a type of license",
-    choices: ['Apache License 2', 'GNU General Public License v3', 'MIT License', 'BSD 2-Clause "Simplified" License', 'Boost Software License 1', 'Creative Commons Zero v1 Universal', 'Eclipse Public License 2', 'Mozilla Public License 2', 'The Unlicense'],
+    choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD 2-Clause "Simplified" License', 'Boost Software License 1.0', 'Creative Commons Zero v1 Universal', 'Eclipse Public License 2.0', 'Mozilla Public License 2.0', 'The Unlicense'],
     default: "no license",
     name: "license"
 },
@@ -730,44 +730,45 @@ function generateMarkdown(data) {
 
 // TODO: Create a function to write README file - ${renderLicenseBadge(input.license)}
 function createReadMe(input) {
-    return `# ${input.title} 
+    return
+    `# ${input.title} 
 
-    ${renderLicenseBadge(input.license)}
+${renderLicenseBadge(input.license)}
     
-    ## Table of Contents 
+## Table of Contents 
     
-    *  [Description](#description)
-    *  [Installation Instructions](#installation-instructions)
-    *  [Usage Instructions](#usage-instructions)
-    *  [Contributing](#contributing)
-    *  [Test Instructions](#test-instructions) 
-    *  [License](#license)
-    *  [Have Questions?](#have-questions)
+*  [Description](#description)
+*  [Installation Instructions](#installation-instructions)
+*  [Usage Instructions](#usage-instructions)
+*  [Contributing](#contributing)
+*  [Test Instructions](#test-instructions) 
+*  [License](#license)
+*  [Have Questions?](#have-questions)
         
-    ## Description
-        ${input.description}
+## Description
+    ${input.description}
         
-    ## Installation Instructions
-        ${input.installation}
+## Installation Instructions
+    ${input.installation}
             
-    ## Usage Instructions
-        ${input.usage}
+## Usage Instructions
+    ${input.usage}
             
-    ## Contributing
-        ${input.contribution}
+## Contributing
+    ${input.contribution}
             
-    ## Test Instructions
-        ${input.tests}
+## Test Instructions
+    ${input.tests}
             
-    ## License
-        ${input.license}
-        ${renderLicenseLink(input.license)}
-        ${renderLicenseSection(input)}
+## License
+    ${input.license}
+    ${renderLicenseLink(input.license)}
+    ${renderLicenseSection(input)}
     
-    ## Have Questions? 
-        Contact me!
-        GitHub: http://www.github.com/${input.github}
-        Email: ${input.email}
+## Have Questions? 
+    Contact Me!
+    GitHub: [https://www.github.com/${input.github}](https://www.github.com/${input.github})
+    Email: ${input.email}
         `
 }
 
