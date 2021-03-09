@@ -767,7 +767,7 @@ ${renderLicenseBadge(input.license)}
     
 ## Have Questions? 
     Contact Me!
-    GitHub: [https://www.github.com/${input.github}](https://www.github.com/${input.github})
+    GitHub: https://www.github.com/${input.github}
     Email: ${input.email}
         `
 }
